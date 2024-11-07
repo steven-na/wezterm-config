@@ -1,0 +1,6 @@
+{
+    "name": "WezTerm Configuration",
+    "root": "./",
+    "files": ["*.lua"]
+  }
+  

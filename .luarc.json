@@ -1,0 +1,9 @@
+{
+  "workspace": {
+    "maxPreload": 1000,
+    "preloadFileSize": 1000
+  },
+  "diagnostics": {
+    "globals": ["wezterm"]
+  }
+}
