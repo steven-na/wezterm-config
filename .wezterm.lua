@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 config.use_fancy_tab_bar = false
-
+config.adjust_window_size_when_changing_font_size = true
 config.default_prog = { "pwsh" }
 config.launch_menu = {
 	{ label = "PowerShell Core", args = { "pwsh" } },
