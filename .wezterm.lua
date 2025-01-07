@@ -49,7 +49,10 @@ config.keys = {
 	{ key = "_", mods = "SHIFT|CTRL", action = "DecreaseFontSize" },
 	{ key = ")", mods = "SHIFT|CTRL", action = "ResetFontSize" },
 }
-
+config.window_frame = {
+	active_titlebar_bg = "#333333",
+	inactive_titlebar_bg = "#333333",
+}
 config.colors = {
 	tab_bar = {
 		background = "#232832",
@@ -82,7 +85,8 @@ config.colors = {
 	},
 }
 
-config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+-- config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.window_decorations = "NONE"
 config.integrated_title_button_style = "Windows"
 config.integrated_title_button_alignment = "Right"
 config.integrated_title_button_color = "Auto"
@@ -90,8 +94,27 @@ config.integrated_title_buttons = { "Hide", "Maximize", "Close" }
 config.hide_tab_bar_if_only_one_tab = true
 -- config.enable_tab_bar=true
 config.use_fancy_tab_bar = false
-config.window_background_opacity = 0.9
+-- config.window_background_opacity = 0.9
+config.window_background_opacity = 0.65
+config.win32_system_backdrop = "Acrylic"
+win32_acrylic_accent_color = "#2e3440"
 config.color_scheme = "nord"
-config.font = wezterm.font("Cascadia Mono NF")
+config.font = wezterm.font("JetBrainsMono Nerd Font")
+
+config.window_background_gradient = {
+	orientation = { Linear = { angle = -90.0 } },
+	colors = {
+		"#5e81ac",
+		"#292e3a",
+		"#292e3a",
+		"#242933",
+		"#242933",
+		"#5e81ac",
+	},
+
+	interpolation = "Basis",
+
+	blend = "Oklab",
+}
 
 return config
